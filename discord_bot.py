@@ -1,5 +1,4 @@
 import discord
-import time
 from key import secret
 from pprint import pprint
 from discord.ext import commands, tasks
@@ -72,30 +71,30 @@ async def quoteCommand(ctx):
 async def studyStratsCommand(ctx):
     await ctx.send("Hi, which study strategy would you like to use today?")
 
-if message.content.startswith("$procrastinate"):
+# if message.content.startswith("$procrastinate"):
 
-        try:
-            file = open("emoji.txt", "r", encoding="utf-8")
-        except:
-            print("you suck")
+#         try:
+#             file = open("emoji.txt", "r", encoding="utf-8")
+#         except:
+#             print("you suck")
 
-        e = []
-        for i in file:
-            if i.strip("\n"):
-                e.append(i)
+#         e = []
+#         for i in file:
+#             if i.strip("\n"):
+#                 e.append(i)
 
 
-        send = e[random.randint(0, len(e))].strip("\n")
-        print(random.choice(list))
-        await message.add_reaction(random.choice(list))
+#         send = e[random.randint(0, len(e))].strip("\n")
+#         print(random.choice(list))
+#         await message.add_reaction(random.choice(list))
 
-        try:
-            await message.add_reaction(unicode)
-            #await message.add_reaction("\U0001F948")
+#         try:
+#             await message.add_reaction(unicode)
+#             #await message.add_reaction("\U0001F948")
 
-        except:
-            print(send, end="")
-            
+#         except:
+#             print(send, end="")
+
 bot.run(secret['discordToken'])
 # @client.event
 # async def on_ready():
